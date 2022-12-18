@@ -5,6 +5,7 @@ import react.Props
 import emotion.react.css
 import react.dom.html.InputType
 import react.dom.html.ReactHTML.div
+import react.dom.html.ReactHTML.img
 import react.dom.html.ReactHTML.input
 import react.useState
 
@@ -33,6 +34,11 @@ val Welcome = FC<WelcomeProps> { props ->
         value = name
         onChange = { event ->
             name = event.target.value
+        }
+    }
+    div {
+        img {
+            src = "https://placekitten.com/408/287"
         }
     }
 }
