@@ -21,6 +21,7 @@ val Welcome = FC<WelcomeProps> { props ->
             color = rgb(56, 246, 137)
         }
         +"Hello, $name"
+        + "Your name backwards is ${name.reversed()}!"
     }
     input {
         css {
