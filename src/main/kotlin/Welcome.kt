@@ -4,6 +4,7 @@ import react.FC
 import react.Props
 import emotion.react.css
 import react.dom.html.InputType
+import react.dom.html.ReactHTML.button
 import react.dom.html.ReactHTML.div
 import react.dom.html.ReactHTML.img
 import react.dom.html.ReactHTML.input
@@ -40,5 +41,11 @@ val Welcome = FC<WelcomeProps> { props ->
         img {
             src = "https://placekitten.com/408/287"
         }
+    }
+    button {
+        onClick = {
+            name = "Some name"
+        }
+        +"Change name"
     }
 }
